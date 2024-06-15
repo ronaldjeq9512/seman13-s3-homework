@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>LNotes</h1>
+    </header>
+    <main class="container">
+        <article class="articleItems">
+            <h2 class="title">Formulario</h2>
+            <form id="formulario" class="formContainer">
+                <div class="inputContainer">
+                    <label for="titleNote">Título:</label>
+                    <input class="input" type="text" name="titleNote" id="titleNote">
+                </div>
+                <div class="inputContainer">
+                    <label for="notes">Notas:</label>
+                    <textarea class="input" name="notes" id="notes"></textarea>
+                </div>
+                <input type="submit" class="inputSubmit" value="Enviar">
+            </form>
+            <div id="message"></div>
+        </article>
+        <aside class="asideItems">
+            <h2 class="title">Listado de notas</h2>
+            <div id="containerList"></div>
+        </aside>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
